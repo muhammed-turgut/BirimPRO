@@ -1,19 +1,397 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/black"
+    >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/birim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Birim"
+            android:textColor="#FF0000"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/donusturucu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:text="Dönüştürücü"
+            android:textColor="#0DEEF8"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_Alan"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="7dp"
+                    android:background="@android:color/transparent"
+                    android:text="Alan" />
+
+                <Button
+                    android:id="@+id/button_uzunluk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="7dp"
+                    android:text="Uzunluk" />
+
+                <Button
+                    android:id="@+id/button_sıcaklık"
+                    android:background="@android:color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="7dp"
+                    android:text="Sıcaklık" />
+
+                <Button
+                    android:id="@+id/button_hacim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="7dp"
+                    android:background="@android:color/transparent"
+                    android:text="Hacim" />
+
+                <Button
+                    android:id="@+id/button_kütle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="7dp"
+                    android:textColor="@color/white"
+                    android:background="@android:color/transparent"
+                    android:text="Kütle" />
+
+                <Button
+                    android:id="@+id/button_veri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="7dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/white"
+                    android:text="Veri" />
+
+                <Button
+                    android:id="@+id/button_hız"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="7dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/white"
+                    android:text="Hız" />
+
+                <Button
+                    android:id="@+id/button_süre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="7dp"
+                    android:text="süre" />
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="11dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/dottetd_line" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="11dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/line_kozmetik" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#222831"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center|top"
+            android:gravity="center|top">
+
+
+            <ImageButton
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="centerCrop"
+                android:contentDescription="Button"
+                android:id="@+id/yedibutton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/yedibutton"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageButton
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="centerCrop"
+                android:id="@+id/sekizbutton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="Button"
+                android:src="@drawable/sekizbutton"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageButton
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="centerCrop"
+                android:id="@+id/dokuzbutton"
+                android:layout_width="80dp"
+                android:contentDescription="Button"
+                android:layout_height="80dp"
+                android:src="@drawable/dokuzbutton"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageButton
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="centerCrop"
+                android:id="@+id/cleanbutton"
+                android:layout_width="80dp"
+                android:contentDescription="Button"
+                android:layout_height="80dp"
+                android:src="@drawable/cleanbutton"
+                android:layout_marginLeft="10dp"/>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center|top"
+            android:gravity="center|top">
+
+
+            <ImageButton
+                android:contentDescription="Button"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="centerCrop"
+                android:id="@+id/dortbutton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/dortbutton"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageButton
+                android:contentDescription="Button"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="centerCrop"
+                android:id="@+id/besbutton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/besbutton"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageButton
+                android:contentDescription="Button"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="centerCrop"
+                android:id="@+id/altibutton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/altibutton"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageButton
+                android:contentDescription="Button"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="centerCrop"
+                android:id="@+id/resetbutton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/resetbutton"
+                android:layout_marginLeft="10dp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center|top"
+            android:gravity="center|top">
+
+
+            <ImageButton
+                android:contentDescription="Button"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="centerCrop"
+                android:id="@+id/birbutton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/birbutton"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageButton
+                android:contentDescription="Button"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="centerCrop"
+                android:id="@+id/ikibutton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ikibutton"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageButton
+                android:contentDescription="Button"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="centerCrop"
+                android:id="@+id/ucbutton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ucbutton"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageButton
+                android:contentDescription="Button"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="centerCrop"
+                android:id="@+id/yukaributton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/yukaributton"
+                android:layout_marginLeft="10dp"/>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center|top"
+            android:gravity="center|top">
+
+
+            <ImageButton
+                android:contentDescription="Button"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="centerCrop"
+                android:id="@+id/isaretbutton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/isaretbutton"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageButton
+                android:contentDescription="Button"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="centerCrop"
+                android:id="@+id/sifirbutton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/sifirbutton"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageButton
+                android:contentDescription="Button"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="centerCrop"
+                android:id="@+id/virgulbutton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/virgulbutton"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageButton
+                android:contentDescription="Button"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="centerCrop"
+                android:id="@+id/asagibutton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/asagibutton"
+                android:layout_marginLeft="10dp"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

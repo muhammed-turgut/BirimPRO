@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashScreen">
+    tools:context=".SplashScreen"
+    android:background="#FBF1F1">
 
 
     <com.airbnb.lottie.LottieAnimationView
@@ -23,10 +24,11 @@
         app:lottie_rawRes="@raw/splashscreen" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Birim PRO"
-        android:textColor="@color/ic_launcher_background"
+        android:textColor="@color/black"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -34,6 +36,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView"
         app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arrow App Studios"
+        android:textStyle="normal"
+        android:textSize="16dp"
+        android:textColor="#FF5722"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.824" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
