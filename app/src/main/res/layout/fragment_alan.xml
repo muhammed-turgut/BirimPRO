@@ -28,7 +28,7 @@
                 android:layout_height="50dp"
                 android:layout_gravity="end|bottom"
                 android:gravity="right"
-                android:text="Çıkış"
+                android:text="0"
                 android:textSize="25dp"
                 android:textColor="@color/white"/>
 
@@ -60,7 +60,7 @@
                 android:id="@+id/TextÇıkış"
                 android:layout_width="350dp"
                 android:layout_height="50dp"
-                android:text="Çıkış"
+                android:text="0"
                 android:gravity="right"
                 android:textSize="25dp"
                 android:layout_gravity="end|bottom"
